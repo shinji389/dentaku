@@ -1,0 +1,15 @@
+#result{
+  width: 210px;
+  background-color: black;
+  color: white;
+  text-align: right;
+}
+
+.buttonA , .buttonB , .buttonZ{
+  width: 50px;
+}
+
+.buttonE{
+  width: 105px;
+}
+

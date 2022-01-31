@@ -1,0 +1,52 @@
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
+        <link rel="stylesheet" href="main.css">
+        <title>電卓</title>
+      </head>
+    
+      <body>
+        <h3></h3>        
+ 
+        <!-- ここに記述していきましょう！ -->
+    
+      <input type="text" id="result" value="0">
+    
+      <div>
+      <input class="buttonA" type="button" value="7" onclick="edit(this)">
+      <input class="buttonA" type="button" value="8" onclick="edit(this)">
+      <input class="buttonA" type="button" value="9" onclick="edit(this)">
+      <input class="buttonB" id="plus" type="button" value="+" onclick="edit(this)" disabled>
+      </div>
+      
+      <div>
+      <input class="buttonA" type="button" value="4" onclick="edit(this)">
+      <input class="buttonA" type="button" value="5" onclick="edit(this)">
+      <input class="buttonA" type="button" value="6" onclick="edit(this)">
+      <input class="buttonB" id="minus" type="button" value="-" onclick="edit(this)" >
+      </div>
+      
+      <div>
+      <input class="buttonA" type="button" value="1" onclick="edit(this)">
+      <input class="buttonA" type="button" value="2" onclick="edit(this)">
+      <input class="buttonA" type="button" value="3" onclick="edit(this)">
+      <input class="buttonB" id="multi" type="button" value="*" onclick="edit(this)" disabled>
+      </div>
+      
+      <div>
+      <input class="buttonA" id="z" type="button" value="0" onclick="edit(this)">
+      <input class="buttonA" type="button" value="00" onclick="edit(this)">
+      <input class="buttonB" id="D_point"  type="button" value="." onclick="edit(this)" >
+      <input class="buttonB" id="division"  type="button" value="/" onclick="edit(this)" disabled>
+      </div>
+ 
+      <div>
+      <input class="buttonE" id="reset" type="button" value="AC">
+      <input class="buttonE" id="total" type="button" value="=">
+      </div>
+ 
+        <script src="main.js"></script>
+      </body>
+    </html>
