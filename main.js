@@ -3,8 +3,36 @@ var result = document.getElementById("result");
 function edit(elem){
   result.value = result.value + elem.value;
   
-  if((result.value).slice(0,1) == "0" ){
+  if((result.value).slice(0,1) == 0 && (result.value).slice(1,2) !== "."){
     result.value = (result.value).slice(1);
+    console.log(result.value);
+  } else{  
+    console.log(result.value);
+  }
+  
+  if((result.value).substr(-3,1) == "+" && (result.value).substr(-2,1) == 0 && (result.value).substr(-1) !== "."){
+    result.value = (result.value).substring( 0 , (result.value).length - 2 );
+    console.log(result.value);
+  } else{  
+    console.log(result.value);
+  }
+  
+  if((result.value).substr(-3,1) == "-" && (result.value).substr(-2,1) == 0 && (result.value).substr(-1) !== "."){
+    result.value = (result.value).substring( 0 , (result.value).length - 2 );
+    console.log(result.value);
+  } else{  
+    console.log(result.value);
+  }
+  
+  if((result.value).substr(-3,1) == "*" && (result.value).substr(-2,1) == 0 && (result.value).substr(-1) !== "."){
+    result.value = (result.value).substring( 0 , (result.value).length - 2 );
+    console.log(result.value);
+  } else{  
+    console.log(result.value);
+  }
+  
+  if((result.value).substr(-3,1) == "/" && (result.value).substr(-2,1) == 0 && (result.value).substr(-1) !== "."){
+    result.value = (result.value).substring( 0 , (result.value).length - 2 );
     console.log(result.value);
   } else{  
     console.log(result.value);
@@ -13,20 +41,13 @@ function edit(elem){
 }
 
 // var Input = Number(0); //現在値
-
 // console.log(result.value);
-
-
 
 $(document).ready(function(){
   $("#plus").click(function(){
     var Input = result.value;
     console.log(Input);
   });
-  
-
-  
-  
   
   $(".buttonA").click(function(){
     $("#plus").prop("disabled", false);
